@@ -4,6 +4,7 @@ import Header from './components/common/Header';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
+import Footer from './components/common/Footer';
 
 const App = () => (
   <div className='App'>
@@ -13,7 +14,7 @@ const App = () => (
       <Route path='about' element={<About />} />
       <Route path='projects' element={<Projects />} />
     </Routes>
-    {/* <Footer /> */}
+    <Footer />
   </div>
 );
 

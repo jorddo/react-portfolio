@@ -8,7 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import CelebrationIcon from '@mui/icons-material/Celebration';
 // import Link from '@mui/material/Link';
 // import { Link } from 'react-router-dom';
 import Link from '../Link';
@@ -36,7 +36,7 @@ const Header = () => {
     <StyledHeader position='static'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <AdbIcon />
+          <CelebrationIcon />
           <Typography
             variant='h6'
             noWrap
