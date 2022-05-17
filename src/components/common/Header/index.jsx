@@ -9,16 +9,14 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CelebrationIcon from '@mui/icons-material/Celebration';
-// import Link from '@mui/material/Link';
-// import { Link } from 'react-router-dom';
 import Link from '../Link';
 import StyledHeader from './styles';
 
-// const pages = ['Products', 'Pricing', 'Blog'];
 const pages = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Projects', path: '/projects' },
+  { label: 'Contact', path: '/contact' },
 ];
 
 const Header = () => {
