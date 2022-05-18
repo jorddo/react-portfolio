@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import Link from '../Link';
@@ -76,7 +75,7 @@ const Header = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page.label} onClick={handleCloseNavMenu}>
-                  <Link to={page.path} textAlign='center'>
+                  <Link to={page.path} sx={{ textAlign: 'center' }}>
                     <Typography variant='body1' component='p'>
                       {page.label}
                     </Typography>
@@ -88,14 +87,14 @@ const Header = () => {
           {/* Desktop Links */}
           <Box className='nav-links'>
             {pages.map((page) => (
-              <Button
+              <Link
                 key={page.label}
-                href={page.path}
+                to={page.path}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page.label}
-              </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>

@@ -1,3 +1,4 @@
+import { TextField, Button } from '@mui/material';
 import React, { useState } from 'react';
 
 function ContactForm() {
@@ -22,7 +23,7 @@ function ContactForm() {
     <section>
       <h1>Contact Me</h1>
       <form id='contact-form' onSubmit={handleSubmit}>
-        <div>
+        {/* <div>
           <label htmlFor='name'>Name:</label>
           <input
             type='text'
@@ -30,26 +31,52 @@ function ContactForm() {
             onChange={handleChange}
             name='name'
           />
-        </div>
-        <div>
-          <label htmlFor='email'>Email address:</label>
+        </div> */}
+        <TextField
+          label='Name'
+          variant='outlined'
+          size='small'
+          name='name'
+          required
+          value={name}
+          onChange={handleChange}
+        />
+        {/* <div>
+          <label htmlFor='email'>Email</label>
           <input
             type='email'
             defaultValue={email}
             name='email'
             onChange={handleChange}
           />
-        </div>
-        <div>
-          <label htmlFor='message'>Message:</label>
+        </div> */}
+        <TextField
+          label='Email'
+          variant='outlined'
+          size='small'
+          name='email'
+          required
+          value={email}
+          onChange={handleChange}
+        />
+        {/* <div>
+          <label htmlFor='message'>Message</label>
           <textarea
             name='message'
             defaultValue={message}
             onChange={handleChange}
             rows='5'
           />
-        </div>
-        <button type='submit'>Submit</button>
+        </div> */}
+        <TextField
+          label='Message'
+          variant='outlined'
+          rows={4}
+          multiline
+          value={message}
+          onChange={handleChange}
+        />
+        <Button variant='contained'>Submit</Button>
       </form>
     </section>
   );
