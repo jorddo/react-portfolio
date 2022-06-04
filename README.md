@@ -2,19 +2,9 @@
 
 ## Description
 
-Welcome to my portfolio! Always a work in progress, and an opportunity for me to learn. Thanks for taking the time to look and I hope you enjoy yourself.
+Welcome to my portfolio! Always a work in progress, and an opportunity for me to learn. I am far from done with my body of work, so this project will be updated regularly. Thanks for taking the time to look and I hope you enjoy yourself.
 
-## Demo
-
-## Deployed Heroku Link
-
-[Book Buddy](https://evening-sierra-04365.herokuapp.com/)
-
-## Installation
-
-- Clone the repo to the directory of your choosing
-
-      npm i
+[Live Link](https://evening-sierra-04365.herokuapp.com/)
 
 ## Credits
 
