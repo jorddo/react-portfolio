@@ -21,6 +21,12 @@ const pages = [
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
+  // console.log(anchorElNav);
+
+  // useEffect(() => {
+  //   document.title = pages.label;
+  // }, [anchorElNav]);
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -91,7 +97,7 @@ const Header = () => {
                 key={page.label}
                 to={page.path}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block', margin: '1rem' }}
               >
                 {page.label}
               </Link>
