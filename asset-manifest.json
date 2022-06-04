@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.964fdded.css",
+    "main.js": "/react-portfolio/static/js/main.d614c08d.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/we-help-austin.png": "/react-portfolio/static/media/we-help-austin.82023e21feec5e784e0b.png",
+    "static/media/vegeta.png": "/react-portfolio/static/media/vegeta.f189fbe0d623f1e02cd1.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.964fdded.css.map": "/react-portfolio/static/css/main.964fdded.css.map",
+    "main.d614c08d.js.map": "/react-portfolio/static/js/main.d614c08d.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.d614c08d.js"
+  ]
+}
