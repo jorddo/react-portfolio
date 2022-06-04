@@ -4,13 +4,17 @@ let theme = createTheme({
   palette: {
     primary: {
       // light: will be calculated from palette.primary.main,
-      main: '#4a4a4a',
+      main: '#121212',
       // dark: will be calculated from palette.primary.main,
       // contrastText: will be calculated to contrast with palette.primary.main
     },
     background: {
       default: '#a1a1a1',
     },
+  },
+  paperContainer: {
+    height: 1350,
+    backgroundImage: `url(${'../assets/landingbg.jpg'})`,
   },
 });
 

@@ -14,7 +14,7 @@ const ProjectsPage = () => {
     <section>
       <Box display='flex' alignItems='flex-start'>
         {/* card one */}
-        <Card sx={{ maxWidth: 400, margin: 3 }}>
+        <Card sx={{ maxWidth: 400, margin: 3, boxShadow: 12 }}>
           <CardActionArea
             href='https://code-vegeta.herokuapp.com/'
             target='_blank'
@@ -37,7 +37,7 @@ const ProjectsPage = () => {
         </Card>
 
         {/* card two */}
-        <Card sx={{ maxWidth: 467, margin: 3 }}>
+        <Card sx={{ maxWidth: 467, margin: 3, boxShadow: 12 }}>
           <CardActionArea
             href='https://frozen-savannah-04684.herokuapp.com/'
             target='_blank'

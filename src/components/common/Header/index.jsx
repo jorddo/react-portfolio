@@ -12,7 +12,7 @@ import Link from '../Link';
 import StyledHeader from './styles';
 
 const pages = [
-  { label: 'Home', path: '/' },
+  { label: 'Home', path: 'react-portfolio' },
   { label: 'About', path: '/about' },
   { label: 'Projects', path: '/projects' },
   { label: 'Contact', path: '/contact' },
@@ -39,14 +39,14 @@ const Header = () => {
     <StyledHeader position='static'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <CelebrationIcon />
           <Typography
             variant='h6'
             noWrap
             component='a'
-            href='/'
+            href='react-portfolio'
             className='header-title'
           >
+            <CelebrationIcon />
             JS
           </Typography>
           {/* Mobile Hamburger Menu */}

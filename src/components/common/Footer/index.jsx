@@ -1,4 +1,7 @@
 import { Container, Grid, Box, Link } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   return (
@@ -19,8 +22,8 @@ const Footer = () => {
       >
         <Container maxWidth='lg'>
           <Grid container spacing={5}>
-            <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Reach Out</Box>
+            <Grid item xs={12} sm={2}>
+              <Box borderBottom={2}>Reach Out</Box>
               <Box>
                 <Link
                   href='mailto:jordanbsneed@gmail.com'
@@ -28,7 +31,7 @@ const Footer = () => {
                   rel='noreferrer'
                   color='inherit'
                 >
-                  Email
+                  <EmailIcon></EmailIcon>
                 </Link>
               </Box>
               <Box>
@@ -38,14 +41,7 @@ const Footer = () => {
                   rel='noreferrer'
                   color='inherit'
                 >
-                  Github
-                  {/* <CardMedia
-                    component='img'
-                    height='100%'
-                    width='100%'
-                    image={require('../../../assets/github.png')}
-                    alt='github'
-                  ></CardMedia> */}
+                  <GitHubIcon></GitHubIcon>
                 </Link>
               </Box>
               <Box>
@@ -55,7 +51,7 @@ const Footer = () => {
                   rel='noreferrer'
                   color='inherit'
                 >
-                  LinkedIn
+                  <LinkedInIcon></LinkedInIcon>
                 </Link>
               </Box>
             </Grid>

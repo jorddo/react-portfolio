@@ -11,8 +11,8 @@ import theme from './styles/theme';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CssBaseline />
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <BrowserRouter>
         <App />
       </BrowserRouter>
