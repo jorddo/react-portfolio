@@ -4,7 +4,7 @@
 
 Welcome to my portfolio! Always a work in progress, and an opportunity for me to learn. I am far from done with my body of work, so this project will be updated regularly. Thanks for taking the time to look and I hope you enjoy yourself.
 
-[Live Link](https://evening-sierra-04365.herokuapp.com/)
+[Live Link](https://jorddo.github.io/react-portfolio/)
 
 ## Credits
 
