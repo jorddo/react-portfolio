@@ -14,7 +14,6 @@ const Footer = () => {
       }}
     >
       <Box
-        // px={{ xs: 2, sm: 8 }}
         py={{ xs: 4, sm: 5 }}
         mx={{ xs: 2, sm: 5 }}
         bgcolor='primary.main'

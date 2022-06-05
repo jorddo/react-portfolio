@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import ContactForm from './pages/Contact';
-import Footer from './components/common/Footer';
+// import Footer from './components/common/Footer';
 
 const App = () => (
   <div className='App'>
@@ -16,7 +16,7 @@ const App = () => (
       <Route path='projects' element={<Projects />} />
       <Route path='contact' element={<ContactForm />} />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 
