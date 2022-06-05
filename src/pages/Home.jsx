@@ -1,13 +1,10 @@
 import { Box, Typography } from '@mui/material';
 
 const home = {
-  typog: {
-    fontSize: 100,
-  },
   box: {
     backgroundColor: '#121212',
     color: 'white',
-    maxWidth: '40rem',
+    // maxWidth: '40rem',
   },
 };
 
@@ -16,12 +13,28 @@ const HomePage = () => {
     <div>
       <Box
         style={home.box}
-        mx={{ xs: 2, sm: 5 }}
-        my={{ xs: 2, sm: 5 }}
-        sx={{ boxShadow: 20 }}
+        fontSize={{ xs: 50, sm: 80 }}
+        maxWidth={{ xs: 300, sm: 400 }}
+        mx={{ xs: 5, sm: 5 }}
+        my={{ xs: 5, sm: 5 }}
+        p={{ xs: 1, sm: 2 }}
+        sx={{ boxShadow: 24 }}
+        borderRadius={{ lg: 2 }}
       >
-        <Typography variant='h2' style={home.typog}>
-          Hey, I'm Jordan and I'm glad you're here
+        <Typography variant='h2'>
+          Hey, <br />
+          <span
+            style={{
+              fontWeight: 'bold',
+              color: 'black',
+              webkitTextStroke: '.3px white',
+            }}
+            fontSize={{ xs: 50, sm: 100 }}
+          >
+            I'm Jordan
+          </span>{' '}
+          <br />
+          and I'm glad you're here
         </Typography>
       </Box>
     </div>

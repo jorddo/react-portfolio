@@ -7,15 +7,15 @@ const Footer = () => {
   return (
     <footer
       style={{
-        position: 'static',
         left: 0,
         bottom: 0,
         right: 0,
       }}
     >
       <Box
-        py={{ xs: 4, sm: 5 }}
-        mx={{ xs: 2, sm: 5 }}
+        position={{ xs: 'static', sm: 'fixed' }}
+        height={{ xs: '205px', md: '300px' }}
+        py={{ xs: 3, sm: 5 }}
         bgcolor='primary.main'
         color='white'
       >
