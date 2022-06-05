@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer
       style={{
-        position: 'fixed',
+        position: 'static',
         left: 0,
         bottom: 0,
         right: 0,

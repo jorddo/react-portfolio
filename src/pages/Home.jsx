@@ -1,4 +1,4 @@
-import { Box, Paper } from '@mui/material';
+import { Box, Paper, Stack } from '@mui/material';
 import Image from '../assets/landing-bg.jpg';
 
 // adding background img to landing page
@@ -17,6 +17,7 @@ const HomePage = () => {
         Hi, <br />
         I'm Jordan
       </Box>
+      <Stack fontSize={69}>I'm glad you're here.</Stack>
     </Paper>
   );
 };
