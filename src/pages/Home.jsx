@@ -1,24 +1,30 @@
-import { Box, Paper, Stack } from '@mui/material';
-import Image from '../assets/landing-bg.jpg';
+import { Box, Typography } from '@mui/material';
 
-// adding background img to landing page
-const styles = {
-  paperContainer: {
-    height: '100vh',
-    backgroundSize: 'cover',
-    backgroundImage: `url(${Image})`,
+const home = {
+  typog: {
+    fontSize: 100,
+  },
+  box: {
+    backgroundColor: '#121212',
+    color: 'white',
+    maxWidth: '40rem',
   },
 };
 
 const HomePage = () => {
   return (
-    <Paper style={styles.paperContainer}>
-      <Box sx={{ fontSize: 200 }}>
-        Hi, <br />
-        I'm Jordan
+    <div>
+      <Box
+        style={home.box}
+        mx={{ xs: 2, sm: 5 }}
+        my={{ xs: 2, sm: 5 }}
+        sx={{ boxShadow: 20 }}
+      >
+        <Typography variant='h2' style={home.typog}>
+          Hey, I'm Jordan and I'm glad you're here
+        </Typography>
       </Box>
-      <Stack fontSize={69}>I'm glad you're here.</Stack>
-    </Paper>
+    </div>
   );
 };
 

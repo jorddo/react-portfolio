@@ -12,10 +12,6 @@ let theme = createTheme({
       default: '#a1a1a1',
     },
   },
-  paperContainer: {
-    height: 1350,
-    backgroundImage: `url(${'../assets/landingbg.jpg'})`,
-  },
 });
 
 theme = responsiveFontSizes(theme);
