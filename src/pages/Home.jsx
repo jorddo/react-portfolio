@@ -20,7 +20,7 @@ const HomePage = () => {
         borderRadius={{ lg: 2 }}
       >
         <Typography variant='h2'>
-          Hi! <br />
+          Hey! <br />
           <span
             style={{
               fontWeight: 'bold',
