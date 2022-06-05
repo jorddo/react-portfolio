@@ -16,17 +16,22 @@ const App = () => {
       backgroundSize: 'cover',
       backgroundImage: `url(${Image})`,
     },
+    flex: {
+      flex: 1,
+    },
   };
 
   return (
     <div className='App' style={styles.bgContainer}>
       <Header />
-      <Routes>
-        <Route path='react-portfolio' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='projects' element={<Projects />} />
-        <Route path='contact' element={<ContactForm />} />
-      </Routes>
+      <div style={styles.flex}>
+        <Routes>
+          <Route path='react-portfolio' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='projects' element={<Projects />} />
+          <Route path='contact' element={<ContactForm />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
