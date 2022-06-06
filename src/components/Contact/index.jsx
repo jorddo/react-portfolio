@@ -24,12 +24,7 @@ function ContactForm() {
       <h1>Contact Me</h1>
       <form name='contact' method='post'>
         <input type='hidden' name='form-name' value='contact' />
-        <TextField
-          TextField
-          id='outlined-basic'
-          label='Name'
-          variant='outlined'
-        >
+        <TextField id='outlined-basic' label='Name' variant='outlined'>
           <label>
             Your Name: <input type='text' name='name' />
           </label>
@@ -44,9 +39,9 @@ function ContactForm() {
             Message: <textarea name='message'></textarea>
           </label>
         </TextField>
-        <TextField>
+        <p>
           <button type='submit'>Send</button>
-        </TextField>
+        </p>
       </form>
       {/* <form id='contact-form' onSubmit={handleSubmit}>
         <input type='hidden' name='form-name' value='contact' />
