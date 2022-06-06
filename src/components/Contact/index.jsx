@@ -23,15 +23,6 @@ function ContactForm() {
     <section>
       <h1>Contact Me</h1>
       <form id='contact-form' onSubmit={handleSubmit}>
-        {/* <div>
-          <label htmlFor='name'>Name:</label>
-          <input
-            type='text'
-            defaultValue={name}
-            onChange={handleChange}
-            name='name'
-          />
-        </div> */}
         <TextField
           label='Name'
           variant='outlined'
@@ -41,15 +32,6 @@ function ContactForm() {
           value={name}
           onChange={handleChange}
         />
-        {/* <div>
-          <label htmlFor='email'>Email</label>
-          <input
-            type='email'
-            defaultValue={email}
-            name='email'
-            onChange={handleChange}
-          />
-        </div> */}
         <TextField
           label='Email'
           variant='outlined'
@@ -59,15 +41,6 @@ function ContactForm() {
           value={email}
           onChange={handleChange}
         />
-        {/* <div>
-          <label htmlFor='message'>Message</label>
-          <textarea
-            name='message'
-            defaultValue={message}
-            onChange={handleChange}
-            rows='5'
-          />
-        </div> */}
         <TextField
           label='Message'
           variant='outlined'

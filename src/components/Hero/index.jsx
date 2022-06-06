@@ -15,9 +15,8 @@ const Hero = () => (
       fontSize={{ xs: 50, sm: 80 }}
       maxWidth={{ xs: 300, sm: 400 }}
       mx={{ xs: 'auto', sm: 'auto' }}
-      // my={{ xs: 10, sm: 5 }}
       p={{ xs: 1, sm: 2 }}
-      borderRadius={{ lg: 2 }}
+      borderRadius={{ sm: 2, lg: 3 }}
     >
       <Typography variant='h2'>
         Hey! <br />
