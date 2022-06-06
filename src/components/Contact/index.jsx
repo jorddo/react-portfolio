@@ -1,4 +1,4 @@
-// import { TextField, Button } from '@mui/material';
+import { TextField } from '@mui/material';
 import React from 'react';
 
 function ContactForm() {
@@ -24,24 +24,29 @@ function ContactForm() {
       <h1>Contact Me</h1>
       <form name='contact' method='post'>
         <input type='hidden' name='form-name' value='contact' />
-        <p>
+        <TextField
+          TextField
+          id='outlined-basic'
+          label='Name'
+          variant='outlined'
+        >
           <label>
             Your Name: <input type='text' name='name' />
           </label>
-        </p>
-        <p>
+        </TextField>
+        <TextField>
           <label>
             Your Email: <input type='email' name='email' />
           </label>
-        </p>
-        <p>
+        </TextField>
+        <TextField>
           <label>
             Message: <textarea name='message'></textarea>
           </label>
-        </p>
-        <p>
+        </TextField>
+        <TextField>
           <button type='submit'>Send</button>
-        </p>
+        </TextField>
       </form>
       {/* <form id='contact-form' onSubmit={handleSubmit}>
         <input type='hidden' name='form-name' value='contact' />
