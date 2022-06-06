@@ -8,10 +8,11 @@ import {
   // Container,
   Box,
 } from '@mui/material';
+import Section from '../common/Section';
 
 const ProjectsPage = () => {
   return (
-    <section>
+    <Section>
       <Box display='flex' alignItems='flex-start'>
         {/* card one */}
         <Card sx={{ maxWidth: 400, margin: 3, boxShadow: 12 }}>
@@ -22,7 +23,7 @@ const ProjectsPage = () => {
             <CardMedia
               component='img'
               height='100%'
-              image={require('../assets/vegeta.png')}
+              image={require('../../assets/vegeta.png')}
               alt='code vegeta'
             />
             <CardContent>
@@ -45,7 +46,7 @@ const ProjectsPage = () => {
             <CardMedia
               component='img'
               height='100%'
-              image={require('../assets/we-help-austin.png')}
+              image={require('../../assets/we-help-austin.png')}
               alt='code vegeta'
             />
             <CardContent>
@@ -59,7 +60,7 @@ const ProjectsPage = () => {
           </CardActionArea>
         </Card>
       </Box>
-    </section>
+    </Section>
   );
 };
 
