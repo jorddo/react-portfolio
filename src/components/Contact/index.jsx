@@ -23,6 +23,7 @@ function ContactForm() {
     <section>
       <h1>Contact Me</h1>
       <form id='contact-form' onSubmit={handleSubmit}>
+        <input type='hidden' name='form-name' value='contact' />
         <TextField
           label='Name'
           variant='outlined'
@@ -31,12 +32,14 @@ function ContactForm() {
           required
           value={name}
           onChange={handleChange}
+          type='text'
         />
         <TextField
           label='Email'
           variant='outlined'
           size='small'
           name='email'
+          type='email'
           required
           value={email}
           onChange={handleChange}
@@ -48,8 +51,11 @@ function ContactForm() {
           multiline
           value={message}
           onChange={handleChange}
+          name='message'
         />
-        <Button variant='contained'>Submit</Button>
+        <Button variant='contained' type='submit'>
+          Submit
+        </Button>
       </form>
     </section>
   );
