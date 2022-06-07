@@ -1,5 +1,5 @@
 import { TextField } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -7,6 +7,14 @@ function ContactForm() {
     email: '',
     message: '',
   });
+
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search.includes('succes=true')) {
+      setSuccess(true);
+    }
+  }, []);
 
   const { name, email, message } = formState;
 
@@ -22,8 +30,14 @@ function ContactForm() {
   return (
     <section id='contact'>
       <h1>Contact Me</h1>
-      <form name='contact' method='post'>
-        <input type='hidden' name='contact' value='contact' />
+      {success && <p style={{ color: 'white' }}>Thank you for your message!</p>}
+      <form
+        name='contact'
+        method='post'
+        action='#contact/?success=true'
+        data-netlify='true'
+      >
+        <input type='hidden' name='form-name' value='contact' />
         <TextField
           id='name'
           label='Name'
