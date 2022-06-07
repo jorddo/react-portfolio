@@ -9,7 +9,7 @@ const home = {
 };
 
 const Hero = () => (
-  <StyledHero>
+  <StyledHero id='hero'>
     <Box
       style={home.box}
       fontSize={{ xs: 50, sm: 80 }}

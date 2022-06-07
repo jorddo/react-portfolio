@@ -8,14 +8,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import CelebrationIcon from '@mui/icons-material/Celebration';
-import Link from '../Link';
+// import Link from '../Link';
 import StyledHeader from './styles';
 
 const pages = [
-  { label: 'Home', path: 'react-portfolio' },
-  { label: 'About', path: '/about' },
-  { label: 'Projects', path: '/projects' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Home', path: '#hero' },
+  { label: 'About', path: '#about' },
+  { label: 'Projects', path: '#projects' },
+  { label: 'Resume', path: '#resume' },
+  { label: 'Contact', path: '#contact' },
 ];
 
 const Header = () => {
@@ -33,6 +34,12 @@ const Header = () => {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleClick = (section) => {
+    document.querySelector(section).scrollIntoView({
+      behavior: 'smooth',
+    });
   };
 
   return (
@@ -80,12 +87,12 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.label} onClick={handleCloseNavMenu}>
-                  <Link to={page.path} sx={{ textAlign: 'center' }}>
+                <MenuItem key={page.label} onClick={handleClick}>
+                  <a href={page.path} sx={{ textAlign: 'center' }}>
                     <Typography variant='body1' component='p'>
                       {page.label}
                     </Typography>
-                  </Link>
+                  </a>
                 </MenuItem>
               ))}
             </Menu>
@@ -93,14 +100,13 @@ const Header = () => {
           {/* Desktop Links */}
           <Box className='nav-links'>
             {pages.map((page) => (
-              <Link
+              <button
                 key={page.label}
-                to={page.path}
-                onClick={handleCloseNavMenu}
+                onClick={() => handleClick(page.path)}
                 sx={{ my: 2, color: 'white', display: 'block', margin: '1rem' }}
               >
                 {page.label}
-              </Link>
+              </button>
             ))}
           </Box>
         </Toolbar>

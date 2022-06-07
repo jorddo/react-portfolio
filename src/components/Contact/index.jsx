@@ -1,18 +1,18 @@
 import { TextField } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 
 function ContactForm() {
-  // const [formState, setFormState] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: '',
-  // });
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-  // const { name, email, message } = formState;
+  const { name, email, message } = formState;
 
-  // function handleChange(e) {
-  //   setFormState({ ...formState, [e.target.name]: e.target.value });
-  // }
+  function handleChange(e) {
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+  }
 
   // function handleSubmit(e) {
   //   e.preventDefault();
@@ -20,68 +20,43 @@ function ContactForm() {
   // }
 
   return (
-    <section>
+    <section id='contact'>
       <h1>Contact Me</h1>
       <form name='contact' method='post'>
-        <input type='hidden' name='form-name' value='contact' />
-        <TextField id='outlined-basic' label='Name' variant='outlined'>
-          <label>
-            Your Name: <input type='text' name='name' />
-          </label>
-        </TextField>
-        <TextField id='outlined-basic' label='Email' variant='outlined'>
-          <label>
-            Your Email: <input type='email' name='email' />
-          </label>
-        </TextField>
+        <input type='hidden' name='contact' value='contact' />
         <TextField
-          id='outlined-basic'
+          id='name'
+          label='Name'
+          variant='outlined'
+          name='name'
+          value={name}
+          onChange={(e) => handleChange(e)}
+        />
+
+        <TextField
+          id='email'
+          label='Email'
+          variant='outlined'
+          name='email'
+          value={email}
+          type='email'
+          onChange={(e) => handleChange(e)}
+        />
+
+        <TextField
+          id='message'
           label='Message'
           variant='outlined'
+          name='message'
+          value={message}
           multiline
           rows={4}
-        >
-          <label>
-            Message: <textarea name='message'></textarea>
-          </label>
-        </TextField>
+          onChange={(e) => handleChange(e)}
+        />
         <p>
           <button type='submit'>Send</button>
         </p>
       </form>
-      {/* <form id='contact-form' onSubmit={handleSubmit}>
-        <input type='hidden' name='form-name' value='contact' />
-        <TextField
-          label='Name'
-          variant='outlined'
-          size='small'
-          name='name'
-          required
-          value={name}
-          onChange={handleChange}
-          type='text'
-        />
-        <TextField
-          label='Email'
-          variant='outlined'
-          size='small'
-          name='email'
-          type='email'
-          required
-          value={email}
-          onChange={handleChange}
-        />
-        <TextField
-          label='Message'
-          variant='outlined'
-          rows={4}
-          multiline
-          value={message}
-          onChange={handleChange}
-          name='message'
-        />
-        <Button variant='contained'>Submit</Button>
-      </form> */}
     </section>
   );
 }

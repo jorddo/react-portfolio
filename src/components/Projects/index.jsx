@@ -12,7 +12,7 @@ import Section from '../common/Section';
 
 const ProjectsPage = () => {
   return (
-    <Section>
+    <Section id='projects'>
       <Box display='flex' alignItems='flex-start'>
         {/* card one */}
         <Card sx={{ maxWidth: 400, margin: 3, boxShadow: 12 }}>

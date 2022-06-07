@@ -1,7 +1,7 @@
 import Section from '../common/Section';
 
 const AboutPage = () => (
-  <Section>
+  <Section id='about'>
     <h2>About Page</h2>
     <p>
       My name is Jordan, and I'm a web developer. I am married with a kid on the
