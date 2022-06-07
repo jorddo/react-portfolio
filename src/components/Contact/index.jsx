@@ -1,4 +1,4 @@
-import { TextField } from '@mui/material';
+import { TextField, Button } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 
 function ContactForm() {
@@ -68,7 +68,9 @@ function ContactForm() {
           onChange={(e) => handleChange(e)}
         />
         <p>
-          <button type='submit'>Send</button>
+          <Button variant='contained' type='submit'>
+            Send
+          </Button>
         </p>
       </form>
     </section>

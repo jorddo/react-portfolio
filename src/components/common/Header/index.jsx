@@ -7,6 +7,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
+import { Button } from '@mui/material';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 // import Link from '../Link';
 import StyledHeader from './styles';
@@ -32,11 +33,12 @@ const Header = () => {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
   const handleClick = (section) => {
+    // handleCloseNavMenu();
     document.querySelector(section).scrollIntoView({
       behavior: 'smooth',
     });
@@ -81,18 +83,21 @@ const Header = () => {
                 horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              // onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.label} onClick={handleClick}>
-                  <a href={page.path} sx={{ textAlign: 'center' }}>
+                <MenuItem
+                  key={page.label}
+                  onClick={() => handleClick(page.path)}
+                >
+                  <Button sx={{ textAlign: 'center' }}>
                     <Typography variant='body1' component='p'>
                       {page.label}
                     </Typography>
-                  </a>
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,13 +105,19 @@ const Header = () => {
           {/* Desktop Links */}
           <Box className='nav-links'>
             {pages.map((page) => (
-              <button
+              <Button
+                variant='contained'
                 key={page.label}
                 onClick={() => handleClick(page.path)}
-                sx={{ my: 2, color: 'white', display: 'block', margin: '1rem' }}
+                sx={{
+                  my: 2,
+                  color: 'white',
+                  display: 'block',
+                  margin: '.3rem',
+                }}
               >
                 {page.label}
-              </button>
+              </Button>
             ))}
           </Box>
         </Toolbar>
