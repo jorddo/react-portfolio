@@ -29,12 +29,18 @@ function ContactForm() {
             Your Name: <input type='text' name='name' />
           </label>
         </TextField>
-        <TextField>
+        <TextField id='outlined-basic' label='Email' variant='outlined'>
           <label>
             Your Email: <input type='email' name='email' />
           </label>
         </TextField>
-        <TextField>
+        <TextField
+          id='outlined-basic'
+          label='Message'
+          variant='outlined'
+          multiline
+          rows={4}
+        >
           <label>
             Message: <textarea name='message'></textarea>
           </label>
