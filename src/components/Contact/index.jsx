@@ -1,5 +1,6 @@
-import { TextField, Button } from '@mui/material';
+import { TextField, Button, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import Section from '../common/Section';
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -28,8 +29,8 @@ function ContactForm() {
   // }
 
   return (
-    <section id='contact'>
-      <h1>Contact Me</h1>
+    <Section id='contact'>
+      <Typography variant='h2'>Contact Me</Typography>
       {success && <p style={{ color: 'white' }}>Thank you for your message!</p>}
       <form
         name='contact'
@@ -67,13 +68,13 @@ function ContactForm() {
           rows={4}
           onChange={(e) => handleChange(e)}
         />
-        <p>
+        <Typography>
           <Button variant='contained' type='submit'>
             Send
           </Button>
-        </p>
+        </Typography>
       </form>
-    </section>
+    </Section>
   );
 }
 

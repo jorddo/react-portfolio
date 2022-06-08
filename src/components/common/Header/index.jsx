@@ -52,7 +52,7 @@ const Header = () => {
             variant='h6'
             noWrap
             component='a'
-            href='react-portfolio'
+            href='#hero'
             className='header-title'
           >
             <CelebrationIcon />
@@ -107,6 +107,7 @@ const Header = () => {
             {pages.map((page) => (
               <Button
                 variant='contained'
+                disableElevation
                 key={page.label}
                 onClick={() => handleClick(page.path)}
                 sx={{

@@ -9,7 +9,7 @@ let theme = createTheme({
       // contrastText: will be calculated to contrast with palette.primary.main
     },
     background: {
-      default: '#a1a1a1',
+      default: '#eee',
     },
   },
 });

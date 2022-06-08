@@ -13,6 +13,7 @@ import Section from '../common/Section';
 const ProjectsPage = () => {
   return (
     <Section id='projects'>
+      <Typography variant='h2'>Projects</Typography>
       <Box display='flex' alignItems='flex-start'>
         {/* card one */}
         <Card sx={{ maxWidth: 400, margin: 3, boxShadow: 12 }}>

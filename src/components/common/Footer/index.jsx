@@ -14,8 +14,6 @@ const Footer = () => {
       position={{ xs: 'static', sm: 'static' }}
       height={{ xs: '10rem', md: 220 }}
       py={{ xs: 2, sm: 5 }}
-      mx={{ xs: 2, sm: 5 }}
-      mb={{ xs: 7, sm: 5 }}
       bgcolor='primary.main'
       color='white'
     >
