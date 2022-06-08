@@ -3,6 +3,7 @@ import { Container } from '@mui/material';
 
 const StyledSection = styled(Container)`
   padding: 4rem 0;
+  align-items: center;
 
   @media screen and (min-width: 800px) {
   }
