@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-import { Container } from '@mui/system';
+import { Container } from '@mui/material';
 
 const StyledSection = styled(Container)`
   padding: 4rem 0;
