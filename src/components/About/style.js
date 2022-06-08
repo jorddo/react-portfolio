@@ -1,5 +1,5 @@
 import { styled } from '@mui/system';
-import { Container } from '@mui/system';
+import { Container } from '@mui/material';
 
 const StyledAbout = styled(Container)`
   display: flex;
