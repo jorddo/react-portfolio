@@ -12,12 +12,12 @@ import Section from '../common/Section';
 import StyledProjects from './style';
 
 const ProjectsPage = () => {
-  const pattern =
-    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23b4b4b4' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E";
+  const projectsPattern =
+    "data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b4b4b4' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
 
   return (
     <Section
-      pattern={pattern}
+      pattern={projectsPattern}
       id='projects'
       sx={{
         display: 'flex',
@@ -89,6 +89,37 @@ const ProjectsPage = () => {
                 </Typography>
                 <Typography variant='body2' color='text.secondary'>
                   A community support and connection app
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+
+          {/* card three */}
+          <Card
+            sx={{
+              // maxHeight: '65%',
+              // maxWidth: 'auto',
+              margin: 3,
+              boxShadow: 12,
+              alignItems: 'center',
+            }}
+          >
+            <CardActionArea
+              href='https://dylank641.github.io/group-project1/'
+              target='_blank'
+            >
+              <CardMedia
+                component='img'
+                height='100%'
+                image={require('../../assets/city-scout.png')}
+                alt='City Scout'
+              />
+              <CardContent>
+                <Typography gutterBottom variant='h5' component='div'>
+                  City Scout
+                </Typography>
+                <Typography variant='body2' color='text.secondary'>
+                  Find your next vacation destination
                 </Typography>
               </CardContent>
             </CardActionArea>
