@@ -1,6 +1,7 @@
 import { styled } from '@mui/material';
+import { Container } from '@mui/material';
 
-const StyledProjects = styled('div')`
+const StyledProjects = styled(Container)`
   flex-direction: column;
   align-items: center;
 

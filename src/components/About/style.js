@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 const StyledAbout = styled(Container)`
   display: flex;
   flex-direction: column;
-  margin: 3rem 0 10rem 0;
+  /* margin: 0 auto; */
   align-items: center;
 
   .about-content {

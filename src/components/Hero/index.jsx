@@ -4,7 +4,7 @@ import StyledHero from './style';
 const home = {
   box: {
     // backgroundColor: '#121212',
-    color: 'white',
+    color: '#4A4A4A',
   },
 };
 
@@ -23,9 +23,9 @@ const Hero = () => (
         <span
           style={{
             fontWeight: 'bold',
-            color: 'black',
+            color: 'white',
             // webkitTextStroke: '.5px #da836a',
-            WebkitTextStroke: '.3px white',
+            WebkitTextStroke: '1.6px black',
           }}
           fontSize={{ xs: 50, sm: 100 }}
         >

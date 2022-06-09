@@ -4,7 +4,7 @@ import picture from '../../assets/headshot.jpg';
 import { Typography } from '@mui/material';
 
 const AboutPage = () => (
-  <Section id='about'>
+  <Section id='about' sx={{ mx: 'auto' }}>
     <Typography variant='h2'>About Me</Typography>
     <StyledAbout>
       <Typography className='about-content'>
