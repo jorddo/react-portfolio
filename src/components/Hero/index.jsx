@@ -32,7 +32,7 @@ const Hero = () => (
           I'm Jordan,
         </span>{' '}
         <br />
-        and I'm glad you're here
+        and I'm glad you're here.
       </Typography>
     </Box>
   </StyledHero>
