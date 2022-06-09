@@ -1,9 +1,10 @@
 import { styled } from '@mui/system';
 
 const StyledResume = styled('div')`
+  padding: 1rem;
   embed {
-    height: 38rem;
-    width: 26rem;
+    height: auto;
+    width: 100%;
   }
 
   @media screen and (min-width: 800px) {
