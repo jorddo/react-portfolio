@@ -11,6 +11,9 @@ let theme = createTheme({
     background: {
       default: '#eee',
     },
+    text: {
+      default: '#4A4A4A',
+    },
   },
 });
 

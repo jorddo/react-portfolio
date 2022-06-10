@@ -23,10 +23,13 @@ const ProjectsPage = () => {
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
+        color: '#4A4A4A',
       }}
     >
       <StyledProjects>
-        <Typography variant='h2'>Projects</Typography>
+        <Typography variant='h2' mb={{ xs: 2, sm: 5 }}>
+          Projects
+        </Typography>
         <Box
           display='flex'
           alignItems='center'

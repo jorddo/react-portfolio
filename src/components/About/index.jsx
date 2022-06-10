@@ -5,7 +5,9 @@ import { Typography } from '@mui/material';
 
 const AboutPage = () => (
   <Section id='about' sx={{ mx: 'auto' }}>
-    <Typography variant='h2'>About Me</Typography>
+    <Typography variant='h2' color='#4A4A4A'>
+      About Me
+    </Typography>
     <StyledAbout>
       <Typography className='about-content'>
         My name is Jordan, and I'm a Full-Stack Web Developer. I am married to

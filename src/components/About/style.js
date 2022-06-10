@@ -24,6 +24,7 @@ const StyledAbout = styled(Container)`
     flex-direction: row;
 
     img {
+      margin-left: 10rem;
       max-width: 20rem;
     }
   }
