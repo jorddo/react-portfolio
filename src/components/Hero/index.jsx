@@ -14,12 +14,12 @@ const Hero = () => (
     <Box
       style={home.box}
       fontSize={{ xs: 50, sm: 80 }}
-      maxWidth={{ xs: 300, sm: 400 }}
+      maxWidth={{ xs: 300, sm: 1200 }}
       mx={{ xs: 'auto', sm: 'auto' }}
       p={{ xs: 1, sm: 2 }}
       borderRadius={{ sm: 2, lg: 3 }}
     >
-      <Typography variant='h2'>
+      <Typography variant='h1' sx={{ marginBottom: 10 }}>
         Hey! <br />
         <span
           style={{
@@ -54,6 +54,7 @@ const Hero = () => (
         options={{
           autoStart: true,
           loop: true,
+          fontSize: 20,
         }}
       />
     </Box>
