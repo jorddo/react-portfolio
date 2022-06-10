@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import StyledHero from './style';
+import Typewriter from 'typewriter-effect';
 
 const home = {
   box: {
@@ -34,6 +35,27 @@ const Hero = () => (
         <br />
         and I'm glad you're here.
       </Typography>
+      <Typewriter
+        onInit={(typewriter) => {
+          typewriter
+            .typeString('I enjoy<br> <strong>building</strong>')
+            .pauseFor(1500)
+            .deleteChars(8)
+            .typeString('<strong>React</strong>')
+            .pauseFor(1500)
+            .deleteChars(5)
+            .typeString('<strong>NodeJS</strong>')
+            .pauseFor(1500)
+            .deleteChars(6)
+            .typeString('<strong>GraphQL</strong>')
+            .pauseFor(1500)
+            .start();
+        }}
+        options={{
+          autoStart: true,
+          loop: true,
+        }}
+      />
     </Box>
   </StyledHero>
 );
