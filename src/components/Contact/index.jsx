@@ -41,7 +41,7 @@ function ContactForm() {
             <TextField
               id='name'
               label='Name'
-              variant='outlined'
+              variant='filled'
               name='name'
               value={name}
               onChange={(e) => handleChange(e)}
@@ -51,7 +51,7 @@ function ContactForm() {
             <TextField
               id='email'
               label='Email'
-              variant='outlined'
+              variant='filled'
               name='email'
               value={email}
               type='email'
@@ -62,7 +62,7 @@ function ContactForm() {
             <TextField
               id='message'
               label='Message'
-              variant='outlined'
+              variant='filled'
               name='message'
               value={message}
               multiline
