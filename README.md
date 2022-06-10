@@ -8,4 +8,4 @@ Welcome to my portfolio! Always a work in progress, and an opportunity for me to
 
 ## Credits
 
-- Background photo by [Laura Vinck](https://unsplash.com/@lauravinck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+https://github.com/awran5/react-simple-typewriter

@@ -21,35 +21,38 @@ const Footer = () => {
         <Container maxWidth='lg'>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={12}>
-              <Box borderBottom={2}>Reach Out</Box>
-              <Box>
+              <Box borderBottom={2} paddingBottom={1}>
+                Reach Out
+              </Box>
+              <Box display={'flex'} justifyContent={'center'} my={2}>
                 <Link
                   href='mailto:jordanbsneed@gmail.com'
                   target='_blank'
                   rel='noreferrer'
                   color='inherit'
+                  mx={2}
                 >
-                  <EmailIcon></EmailIcon>
+                  <EmailIcon />
                 </Link>
-              </Box>
-              <Box>
+
                 <Link
                   href='https://github.com/jorddo'
                   target='_blank'
                   rel='noreferrer'
                   color='inherit'
+                  mx={2}
                 >
-                  <GitHubIcon></GitHubIcon>
+                  <GitHubIcon />
                 </Link>
-              </Box>
-              <Box>
+
                 <Link
                   href='https://www.linkedin.com/in/jordanbsneed/'
                   target='_blank'
                   rel='noreferrer'
                   color='inherit'
+                  mx={2}
                 >
-                  <LinkedInIcon></LinkedInIcon>
+                  <LinkedInIcon />
                 </Link>
               </Box>
             </Grid>

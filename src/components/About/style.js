@@ -8,8 +8,10 @@ const StyledAbout = styled(Container)`
   align-items: center;
 
   .about-content {
-    max-width: 50rem;
+    padding-top: 2rem;
+    max-width: 90%;
     margin: auto;
+    font-size: 1.1rem;
   }
 
   img {
